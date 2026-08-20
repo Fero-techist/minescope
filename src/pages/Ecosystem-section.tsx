@@ -36,7 +36,7 @@ const EcosystemSection = () => {
   };
 
   return (
-    <section className="px-10 py-20">
+    <section className="md:px-6 px-4 py-20">
       <motion.div
         initial="hidden"
         whileInView="show"

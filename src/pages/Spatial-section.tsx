@@ -6,7 +6,7 @@ import MapCard from "../components/MapCard";
 
 const SpatialSection = () => {
   return (
-    <section className="grid md:grid-cols-2 bg-[#131B2E] gap-12 px-10 py-20 items-center">
+    <section className="grid md:grid-cols-2 bg-[#131B2E] gap-12 md:px-6 px-4 py-20 items-center">
       {/* LEFT */}
       <div>
         <Text
@@ -20,7 +20,7 @@ const SpatialSection = () => {
           variant="heading"
           className="mt-4 font-[Outfit] leading-tight"
         >
-          Real-Time <br /> Subsurface <br /> Spatial Intelligence
+          Real-Time Subsurface Spatial Intelligence
         </Text>
 
         <motion.div

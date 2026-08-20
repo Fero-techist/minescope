@@ -125,9 +125,9 @@ const Reports = () => {
       component={
         <div className=" min-h-screen">
           <div>
-            <header className="flex flex-col gap-5 border-b border-white/5 px-5 py-6 sm:px-8 lg:flex-row lg:items-center lg:justify-between ">
+            <header className="flex flex-col gap-5 border-b border-white/5  py-6 sm:px-8 lg:flex-row lg:items-center lg:justify-between ">
               <div className="space-y-4 grid justify-between items-start ">
-                <div className=" flex gap-6">
+                <div className=" md:grid-cols-3 grid-cols-2  grid gap-6">
                   <DashButton
                     title="Export as PDF"
                     className=" px-4"
@@ -179,7 +179,7 @@ const Reports = () => {
               </div>
             </header>
 
-            <div className="space-y-6 p-5 sm:p-8 lg:p-6">
+            <div className="space-y-6  sm:p-8 lg:p-6">
               <section className="grid gap-4 xl:grid-cols-[1fr_380px]">
                 <div className="rounded-xl border border-white/5 bg-[#121c31] p-5">
                   <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">

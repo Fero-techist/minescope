@@ -3,7 +3,7 @@ import Text from "../components/text";
 
 const CTASection = () => {
   return (
-    <section className="px-10 py-20">
+    <section className="md:px-10  px-4 py-20">
       <div
         className="relative rounded-3xl p-12 text-center overflow-hidden
         bg-gradient-to-r from-green-400 to-emerald-500"

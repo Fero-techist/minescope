@@ -15,7 +15,7 @@ export const RoleSelector = ({
         <button
           key={role}
           onClick={() => onChange(role)}
-          className={`flex-1 py-3 rounded-lg border transition
+          className={`flex-1 py-3 md:px-0 px-2 rounded-lg border transition
             ${
               value === role
                 ? "bg-[#001C10] text-white border-[#4EDEA3]"

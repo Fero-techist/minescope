@@ -24,7 +24,9 @@ p-6
 
       <div className="flex flex-col gap-4 justify-between items-start mb-8 sm:flex-row sm:items-center">
         <div>
-          <h2 className="text-white text-xl font-semibold">Active Concessions</h2>
+          <h2 className="text-white text-xl font-semibold">
+            Active Concessions
+          </h2>
 
           <p className="text-gray-500 text-sm">
             Government & corporate operations
@@ -46,9 +48,9 @@ p-6
 
       <div className="w-full overflow-x-auto">
         <table className="w-full min-w-[760px] table-auto">
-        <thead>
-          <tr
-            className="
+          <thead>
+            <tr
+              className="
 text-left
 
 text-gray-500
@@ -56,83 +58,83 @@ text-gray-500
 border-b
 border-[#1A2944]
 "
-          >
-            <th className="pb-5">Concession</th>
+            >
+              <th className="pb-5">Concession</th>
 
-            <th>Resource</th>
+              <th>Resource</th>
 
-            <th>Region</th>
+              <th>Region</th>
 
-            <th>Output</th>
+              <th>Output</th>
 
-            <th>Status</th>
+              <th>Status</th>
 
-            <th>Compliance</th>
-          </tr>
-        </thead>
+              <th>Compliance</th>
+            </tr>
+          </thead>
 
-        <tbody>
-          {concessions.map((item) => (
-            <tr
-              key={item.id}
-              className="
+          <tbody>
+            {concessions.map((item) => (
+              <tr
+                key={item.id}
+                className="
 border-b
 
 border-[#13223D]
 
 hover:bg-[#13223D]/30
 "
-            >
-              <td
-                className="
+              >
+                <td
+                  className="
 py-5
 
 text-white
 "
-              >
-                {item.name}
-              </td>
+                >
+                  {item.name}
+                </td>
 
-              <td
-                className="
+                <td
+                  className="
 text-gray-300
 "
-              >
-                {item.resource}
-              </td>
+                >
+                  {item.resource}
+                </td>
 
-              <td
-                className="
+                <td
+                  className="
 text-gray-300
 "
-              >
-                {item.region}
-              </td>
+                >
+                  {item.region}
+                </td>
 
-              <td
-                className="
+                <td
+                  className="
 text-white
 "
-              >
-                {item.output}
-              </td>
+                >
+                  {item.output}
+                </td>
 
-              <td>
-                <StatusBadge status={item.status} />
-              </td>
+                <td>
+                  <StatusBadge status={item.status} />
+                </td>
 
-              <td
-                className="
+                <td
+                  className="
 text-emerald-400
 font-medium
 "
-              >
-                {item.compliance}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+                >
+                  {item.compliance}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );

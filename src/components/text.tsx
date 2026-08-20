@@ -8,7 +8,7 @@ const Text = ({ children, variant = "body", className = "" }: TextProps) => {
   const base = "text-[#DEE1F7]";
 
   const styles = {
-    heading: "text-5xl md:text-6xl font-bold",
+    heading: "text-3xl md:text-6xl font-bold",
     preheading: "text-4xl md:text-5xl font-semibold",
     subheading: "text-xl text-gray-300",
     body: "text-[#C2C6D6] text-base",

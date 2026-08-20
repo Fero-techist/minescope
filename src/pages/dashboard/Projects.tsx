@@ -55,7 +55,7 @@ const Projects = () => {
                   Emerald Basin Alpha
                 </h1>
 
-                <div className="flex items-center gap-2 text-slate-400 text-sm md:text-[17px]">
+                <div className="flex items-center gap-2 md:mb-0 mb-8 text-slate-400 text-sm md:text-[17px]">
                   <MapPin size={18} />
 
                   <p>
@@ -188,7 +188,7 @@ const Projects = () => {
                     </p>
 
                     <h3
-                            className="
+                      className="
                 text-2xl
                 font-semibold
                           leading-tight

@@ -118,7 +118,7 @@ export default function Settings() {
             </button>
           </div>
 
-          <div className="max-w-7xl px-5 py-7 sm:px-8 lg:px-10 lg:py-8">
+          <div className="max-w-7xl  py-7 sm:px-8 lg:px-10 lg:py-8">
             <section>
               <SectionHeading
                 title="Profile Settings"

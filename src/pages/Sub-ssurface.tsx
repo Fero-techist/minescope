@@ -12,7 +12,7 @@ const SubsurfaceInsightsCard: React.FC = () => {
 
   return (
     <div className="min-h-screen relative flex items-center justify-center bg-[#0b1220] px-4 py-8 font-[Outfit]">
-      <div className="flex flex-col md:flex-row gap-12 bg-white/[0.04] border border-white/[0.08] rounded-2xl p-10 max-w-7xl w-full shadow-[0_32px_80px_rgba(0,0,0,0.5)] backdrop-blur-md">
+      <div className="flex flex-col md:flex-row gap-12 bg-white/[0.04] border border-white/[0.08] rounded-2xl md:p-10 p-6 max-w-7xl w-full shadow-[0_32px_80px_rgba(0,0,0,0.5)] backdrop-blur-md">
         <div className="flex flex-col flex-1 gap-4 md:w-50 shrink-0">
           <motion.div
             variants={cardVariants}

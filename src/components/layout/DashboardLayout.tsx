@@ -16,7 +16,7 @@ const DashboardLayout = ({ component }: DashboardLayoutProps) => {
         onClose={() => setMobileSidebarOpen(false)}
       />
 
-      <div className="theme-content min-w-0 flex-1 px-4 pt-4 sm:px-6 sm:pt-5 md:pl-[280px] md:pr-8">
+      <div className="theme-content min-w-0 flex-1 px-2 pt-4 sm:px-6 sm:pt-5 md:pl-[280px] md:pr-8">
         <Topbar onOpenSidebar={() => setMobileSidebarOpen(true)} />
 
         <div className="mt-6 sm:mt-8">{component}</div>

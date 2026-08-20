@@ -43,15 +43,6 @@ const Hero = () => {
     },
   };
 
-  // const cardVariants = {
-  //   hidden: { opacity: 0, y: 20 },
-  //   show: {
-  //     opacity: 1,
-  //     y: 0,
-  //     transition: { duration: 0.5, ease: "easeOut", delay: 1.2 },
-  //   },
-  // };
-
   const headingWords = [
     "Smart Mineral Resource",
     "Management &",
@@ -59,7 +50,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="text-center mt-20 px-6 py-20">
+    <section className="text-center md:mt-20 mt-10 md:px-6 px-4 py-20">
       <Badge text="REVOLUTIONIZING SUBSURFACE INTELLIGENCE" />
 
       <motion.div
