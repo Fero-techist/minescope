@@ -34,4 +34,4 @@ export const miningDeals = [
 
     status: "COMPLETED",
   },
-];
+] as const;

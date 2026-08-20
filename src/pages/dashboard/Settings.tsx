@@ -6,11 +6,9 @@ import {
   Mail,
   Shield,
   ShieldCheck,
-  User,
   Users,
   Settings as SettingsIcon,
   KeyRound,
-  Smartphone,
 } from "lucide-react";
 import DashboardLayout from "../../components/layout/DashboardLayout";
 

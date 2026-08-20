@@ -10,9 +10,9 @@ export interface StatBlockProps {
 }
 
 export interface CustomTooltipProps {
-  active: boolean;
+  active?: boolean;
   payload?: { value: number }[];
-  label: string;
+  label?: string;
 }
 
 export interface ChartDataPoint {

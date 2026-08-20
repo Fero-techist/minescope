@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 import FeatureCard from "../components/featureCard";
 // import type { Variants } from "framer-motion";
 import Text from "../components/text";
 import ecosystemData from "../data/ecosystem";
 
 const EcosystemSection = () => {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: {},
     show: {
       transition: {
@@ -14,7 +15,7 @@ const EcosystemSection = () => {
     },
   };
 
-  const headerVariants = {
+  const headerVariants: Variants = {
     hidden: { opacity: 0, y: 20, filter: "blur(6px)" },
     show: {
       opacity: 1,
@@ -24,7 +25,7 @@ const EcosystemSection = () => {
     },
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 40, scale: 0.96 },
     show: {
       opacity: 1,

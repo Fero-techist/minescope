@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 import Button from "../components/partials/buttons/Button";
 import Badge from "../components/UI/Badge";
 import Text from "../components/text";
 import DashButton from "../components/partials/buttons/DashButton";
 
 const Hero = () => {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: {},
     show: {
       transition: {
@@ -14,7 +15,7 @@ const Hero = () => {
     },
   };
 
-  const wordVariants = {
+  const wordVariants: Variants = {
     hidden: { opacity: 0, y: 24, filter: "blur(8px)" },
     show: {
       opacity: 1,
@@ -24,7 +25,7 @@ const Hero = () => {
     },
   };
 
-  const subtitleVariants = {
+  const subtitleVariants: Variants = {
     hidden: { opacity: 0, y: 16 },
     show: {
       opacity: 1,
@@ -33,7 +34,7 @@ const Hero = () => {
     },
   };
 
-  const buttonVariants = {
+  const buttonVariants: Variants = {
     hidden: { opacity: 0, scale: 0.92 },
     show: {
       opacity: 1,

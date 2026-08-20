@@ -115,18 +115,21 @@ export const minerals: Mineral[] = [
     name: "Gold",
     value: 82,
     color: "#56D39B",
+    glow: false,
   },
   {
     id: "lithium",
     name: "Lithium",
     value: 62,
     color: "#7CC5EE",
+    glow: false,
   },
   {
     id: "copper",
     name: "Copper",
     value: 42,
     color: "#B7C4DD",
+    glow: false,
   },
   {
     id: "iron",
@@ -140,5 +143,6 @@ export const minerals: Mineral[] = [
     name: "Cobalt",
     value: 28,
     color: "#F87171",
+    glow: false,
   },
 ];
