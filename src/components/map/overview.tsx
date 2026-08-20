@@ -21,7 +21,6 @@ const DashboardOverview = () => {
       className="
       w-full
       min-h-screen
-
            text-white
 
       
@@ -29,8 +28,6 @@ const DashboardOverview = () => {
       font-Manrope
     "
     >
-      {/* HERO SECTION */}
-
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -38,18 +35,15 @@ const DashboardOverview = () => {
         className="mb-8"
       ></motion.div>
 
-      {/* ANALYTICS SECTION */}
-
       <div
         className="
         grid
-        grid-cols-[1.7fr_0.8fr]
+        grid-cols-1
+        xl:grid-cols-[1.7fr_0.8fr]
 
         gap-8
       "
       >
-        {/* GEOLOGICAL CHART */}
-
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,26 +54,31 @@ const DashboardOverview = () => {
           border
           border-white/5
 
-          rounded-[34px]
+          rounded-2xl
+          sm:rounded-[34px]
 
-          p-8
+          p-5
+          sm:p-8
         "
         >
-          {/* HEADER */}
-
           <div
             className="
             flex
+            flex-col
+            gap-4
+            sm:flex-row
             items-start
             justify-between
 
-            mb-10
+            mb-6
+            sm:mb-10
           "
           >
             <div>
               <h2
                 className="
-                text-3xl
+                text-2xl
+                sm:text-3xl
                 font-semibold
 
                 mb-2
@@ -91,7 +90,8 @@ const DashboardOverview = () => {
               <p
                 className="
                 text-slate-400
-                text-lg
+                text-base
+                sm:text-lg
               "
               >
                 Seismic & density readings (Last 30 days)
@@ -105,6 +105,8 @@ const DashboardOverview = () => {
               flex
               items-center
               gap-2
+              self-start
+              sm:self-auto
             "
             >
               <button
@@ -139,9 +141,7 @@ const DashboardOverview = () => {
             </div>
           </div>
 
-          {/* LIVE AREA CHART */}
-
-          <div className="h-[320px]">
+          <div className="h-[260px] sm:h-[320px]">
             <ResponsiveContainer
               width="100%"
               height="100%"
@@ -207,9 +207,11 @@ const DashboardOverview = () => {
           border
           border-white/5
 
-          rounded-[34px]
+          rounded-2xl
+          sm:rounded-[34px]
 
-          p-8
+          p-5
+          sm:p-8
 
           relative
         "
@@ -222,8 +224,13 @@ const DashboardOverview = () => {
             top-8
             right-8
 
-            w-14
-            h-14
+            sm:top-8
+            sm:right-8
+
+            w-12
+            h-12
+            sm:w-14
+            sm:h-14
 
             rounded-2xl
 
@@ -245,10 +252,12 @@ const DashboardOverview = () => {
 
           <h2
             className="
-            text-3xl
+            text-2xl
+            sm:text-3xl
             font-semibold
 
-            mb-10
+            mb-6
+            sm:mb-10
           "
           >
             Resource <br /> Composition
@@ -256,7 +265,7 @@ const DashboardOverview = () => {
 
           {/* DONUT CHART */}
 
-          <div className="relative h-[250px]">
+          <div className="relative h-[220px] sm:h-[250px]">
             <ResponsiveContainer
               width="100%"
               height="100%"

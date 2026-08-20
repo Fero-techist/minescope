@@ -179,7 +179,7 @@ const Reports = () => {
               </div>
             </header>
 
-            <div className="space-y-6  sm:p-8 lg:p-6">
+            <div className="space-y-6 sm:p-8 lg:p-6">
               <section className="grid gap-4 xl:grid-cols-[1fr_380px]">
                 <div className="rounded-xl border border-white/5 bg-[#121c31] p-5">
                   <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
