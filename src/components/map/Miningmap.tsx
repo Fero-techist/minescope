@@ -22,8 +22,6 @@ const MiningMap = () => {
       p-6
     "
     >
-      {/* Background image */}
-
       <img
         src="./images/Styled topographical map.png"
         alt="Mining map"
@@ -37,8 +35,6 @@ const MiningMap = () => {
         object-cover
       "
       />
-
-      {/* Black overlay */}
 
       <div
         className="

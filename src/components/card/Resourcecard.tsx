@@ -1,3 +1,5 @@
+import DashButton from "../partials/buttons/DashButton";
+
 type Resource = {
   name: string;
   percentage: number;
@@ -107,9 +109,11 @@ rounded-full
         ))}
 
         <div className="pt-5 mx-auto w-max">
-          <button className="bg-emerald-400  text-black px-4 py-2 rounded-xl font-medium">
-            View Full Resource Report
-          </button>
+          <DashButton
+            className="px-4"
+            title="  View Full Resource Report"
+          />
+          {/* <button className="bg-emerald-400  text-black px-4 py-2 rounded-xl font-medium"></button> */}
         </div>
       </div>
     </div>

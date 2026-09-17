@@ -1,9 +1,12 @@
 import { Input } from "../UI/Input";
-import Button from "../partials/buttons/Button";
+// import Button from "../partials/buttons/Button";
 import { Card } from "../UI/Card";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import DashButton from "../partials/buttons/DashButton";
 
 export const LoginForm = () => {
+  const navigate = useNavigate();
+
   return (
     <Card>
       <h2 className="text-2xl font-semibold text-white mb-2">Welcome Back</h2>
@@ -22,15 +25,23 @@ export const LoginForm = () => {
           placeholder="••••••••"
         />
 
-        <Link to="/dashboard">
-          <Button>Sign In</Button>
-        </Link>
+        <DashButton
+          title="Sign in"
+          variant="primary"
+          onClick={() => navigate("/dashboard")}
+          // icon={<Plus size={14} />}
+        />
 
         <div className="text-center text-gray-500 text-sm mt-2">
           OR CONTINUE WITH
         </div>
 
-        <Button variant="primary">Continue with Google</Button>
+        {/* <Button variant="primary"></Button> */}
+        <DashButton
+          title="Continue with Google"
+          variant="primary"
+          onClick={() => navigate("")}
+        />
 
         <p className="text-sm text-gray-400 text-center mt-4">
           Don’t have an account?{" "}

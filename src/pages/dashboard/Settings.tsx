@@ -67,14 +67,11 @@ export default function Settings() {
   const [emailNotifications, setEmailNotifications] = useState(true);
   const [systemAlerts, setSystemAlerts] = useState(false);
   const [twoFactorEnabled, setTwoFactorEnabled] = useState(false);
-
   const [fullName, setFullName] = useState("Alex Sterling");
   const [email, setEmail] = useState("alex.sterling@minescope.io");
-
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-
   const [region, setRegion] = useState("North America - Central");
 
   const handleProfileUpdate = () => {
@@ -118,7 +115,7 @@ export default function Settings() {
             </button>
           </div>
 
-          <div className="max-w-7xl  py-7 sm:px-8 lg:px-10 lg:py-8">
+          <div className="max-w-7xl  py-7 sm:px-8 lg:px-6 lg:py-8">
             <section>
               <SectionHeading
                 title="Profile Settings"
@@ -145,7 +142,6 @@ export default function Settings() {
                       />
                     </div>
 
-                    {/* User Role */}
                     <div>
                       <label
                         htmlFor="userRole"
@@ -170,7 +166,6 @@ export default function Settings() {
                       </div>
                     </div>
 
-                    {/* Email */}
                     <div>
                       <label
                         htmlFor="email"
@@ -188,7 +183,6 @@ export default function Settings() {
                       />
                     </div>
 
-                    {/* Update button */}
                     <div className="flex items-end justify-start md:justify-end">
                       <button
                         type="button"
@@ -203,9 +197,6 @@ export default function Settings() {
               </div>
             </section>
 
-            {/* =====================================================
-                SECURITY
-            ===================================================== */}
             <section className="mt-8">
               <SectionHeading
                 title="Security"
@@ -213,7 +204,6 @@ export default function Settings() {
               />
 
               <div className="overflow-hidden rounded-xl border border-white/5 bg-[#121c31]">
-                {/* Passwords */}
                 <div className="p-5 sm:p-6">
                   <div className="grid gap-4 md:grid-cols-3">
                     <PasswordInput
@@ -294,9 +284,6 @@ export default function Settings() {
               </div>
             </section>
 
-            {/* =====================================================
-                SYSTEM PREFERENCES
-            ===================================================== */}
             <section className="mt-8">
               <SectionHeading
                 title="System Preferences"
@@ -338,7 +325,6 @@ export default function Settings() {
                   </div>
                 </div>
 
-                {/* Notifications */}
                 <div className="rounded-xl border border-white/5 bg-[#121c31] p-5">
                   <PreferenceRow
                     icon={<Mail size={16} />}

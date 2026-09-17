@@ -18,14 +18,7 @@ import {
 const DashboardOverview = () => {
   return (
     <section
-      className="
-      w-full
-      min-h-screen
-           text-white
-
-      
-
-      font-Manrope
+      className=" w-fullvmin-h-screen text-white font-Manrope
     "
     >
       <motion.div
@@ -35,9 +28,13 @@ const DashboardOverview = () => {
         className="mb-8"
       ></motion.div>
 
+      {/* #WebDevelopment #FrontendDeveloper #CustomCoding #UIUX #HTML #CSS #JavaScript #WebDesign #TechPortfolio #SoftwareEngineering #ProjectShowcase */}
+
       <div
         className="
         grid
+
+        
         grid-cols-1
         xl:grid-cols-[1.7fr_0.8fr]
 
